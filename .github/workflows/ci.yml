@@ -56,7 +56,6 @@ jobs:
       - name: Build documentation
         uses: elastic/docs-builder@main
         with:
-          prefix: undertone
           strict: true
 
       - name: The landing page and its images

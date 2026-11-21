@@ -18,8 +18,8 @@
 </p>
 
 <p align="center">
-  <a href="https://mpdreamz.github.io/undertone/"><b>Website</b></a> ·
-  <a href="https://mpdreamz.github.io/undertone/getting-started/"><b>Docs</b></a> ·
+  <a href="https://undertone.optionull.app/"><b>Website</b></a> ·
+  <a href="https://undertone.optionull.app/getting-started/"><b>Docs</b></a> ·
   <a href="https://github.com/mpdreamz/undertone/releases/latest/download/Undertone-arm64.zip"><b>Download</b></a>
 </p>
 
@@ -57,7 +57,7 @@ tonality, shuffle them and leave some out, or let the season choose the colours.
   </tr>
 </table>
 
-Plus mesh, flow and contour: [all of them, in every tonality](https://mpdreamz.github.io/undertone/pictures/styles/).
+Plus mesh, flow and contour: [all of them, in every tonality](https://undertone.optionull.app/pictures/styles/).
 
 ## Effects, as many as you like
 
@@ -126,7 +126,7 @@ hide_notch = true
 round_corners = true
 ```
 
-`undertone config --check` lists anything it cannot use. [The whole file.](https://mpdreamz.github.io/undertone/reference/configuration/)
+`undertone config --check` lists anything it cannot use. [The whole file.](https://undertone.optionull.app/reference/configuration/)
 
 ## From the command line
 

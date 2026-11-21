@@ -9,11 +9,11 @@ set -euo pipefail
 root="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$root"
 
-# Where GitHub Pages serves the site: its host, for canonical links and the image social sites show, and its
-# sub-path. The landing page's <base href> and the CI docs job's prefix: input must agree with the sub-path, and
-# nothing but this check would notice if they drifted.
-site="https://mpdreamz.github.io"
-path_prefix="undertone"
+# Where GitHub Pages serves the site: its address, for canonical links and the image social sites show, and the
+# sub-path under it (none: the custom domain serves the root). The landing page's <base href> and the CI docs job's
+# prefix: input must agree with the sub-path, and nothing but this check would notice if they drifted.
+site="https://undertone.optionull.app"
+path_prefix=""
 landing="docs/undertone-landing.html"
 workflow=".github/workflows/ci.yml"
 expected_base="/"
@@ -69,8 +69,13 @@ cp docs/images/shots/landing/motion.mp4 "$out/images/shots/landing/"
 echo "docs: built $out (landing page applied)"
 
 [[ "${1:-}" == "--noserve" ]] && exit 0
-# Served from a folder named like the prefix, so the site's absolute links resolve as they will on GitHub Pages.
-serve="$(mktemp -d)"
-ln -s "$root/$out" "$serve/$path_prefix"
-echo "docs: serving http://localhost:4000/$path_prefix/"
+# Served from a folder named like the prefix (the folder itself when there is none), so the site's absolute links
+# resolve as they will on GitHub Pages.
+if [[ -n "$path_prefix" ]]; then
+  serve="$(mktemp -d)"
+  ln -s "$root/$out" "$serve/$path_prefix"
+else
+  serve="$root/$out"
+fi
+echo "docs: serving http://localhost:4000/${path_prefix:+$path_prefix/}"
 cd "$serve" && exec python3 -m http.server 4000

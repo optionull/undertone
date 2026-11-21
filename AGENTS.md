@@ -25,7 +25,7 @@ dark mode), hides the notch and the screen's corners in black, and keeps its pic
 ## Docs
 
 `docs/` is a docs-builder site with `docs/undertone-landing.html` over its home page, published to GitHub Pages
-(`https://mpdreamz.github.io/undertone/`, so links carry the `/undertone/` prefix) by `.github/workflows/docs.yml` on
+(`https://undertone.optionull.app/`, the root of its own domain, so links carry no path prefix) by `.github/workflows/docs.yml` on
 every merge. Every image in `docs/images` is drawn by Undertone from a fixed recipe: change a style, a tonality or an
 overlay and run `mise run shots`, never a screenshot of a real desktop. Docs claim only what is built.
 
