@@ -418,7 +418,7 @@ public enum ConfigFile {
         return """
         # Undertone's settings. Undertone reads this file when it changes, and writes it (in this layout, without
         # comments of your own) when you change a setting from its settings window or menu.
-        # https://mpdreamz.github.io/undertone/reference/configuration/
+        # https://undertone.optionull.app/reference/configuration/
 
         [style]
         mode = \(quote(settings.style.mode.rawValue))  # shuffle (a new style each shuffle) or always

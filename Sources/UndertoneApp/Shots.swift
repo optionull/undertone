@@ -449,7 +449,7 @@ enum Shots {
                 ]
             )
             lines.draw(in: NSRect(x: 72 * k, y: 345 * k, width: 520 * k, height: 200 * k))
-            let footer = NSAttributedString(string: "mpdreamz.github.io/undertone", attributes: [
+            let footer = NSAttributedString(string: "undertone.optionull.app", attributes: [
                 .font: NSFont.monospacedSystemFont(ofSize: 20 * k, weight: .medium),
                 .foregroundColor: NSColor(red: 1, green: 0.69, blue: 0.24, alpha: 1),
             ])

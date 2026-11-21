@@ -1,7 +1,7 @@
 name: docs
 
 # The docs (docs-builder) with the landing page over their home page, published to GitHub Pages at
-# https://mpdreamz.github.io/undertone/. scripts/docs.sh builds the same thing locally (mise run docs).
+# https://undertone.optionull.app/. scripts/docs.sh builds the same thing locally (mise run docs).
 on:
   push:
     branches: [main]
