@@ -1,13 +1,13 @@
-# TEMPLATE: the Homebrew cask, as scripts/bump-tap.sh writes it to mpdreamz/homebrew-tap on every release, with the
+# TEMPLATE: the Homebrew cask, as scripts/bump-tap.sh writes it to optionull/homebrew-tap on every release, with the
 # version and the zip's sha256 filled in. Change it here, not in the tap. (bump-tap.sh replaces this header.)
 cask "undertone" do
   version "__VERSION__"
   sha256 "__SHA256__"
 
-  url "https://github.com/mpdreamz/undertone/releases/download/v#{version}/Undertone-arm64.zip"
+  url "https://github.com/optionull/undertone/releases/download/v#{version}/Undertone-arm64.zip"
   name "Undertone"
   desc "Hide the notch under generated wallpapers that follow your theme"
-  homepage "https://github.com/mpdreamz/undertone"
+  homepage "https://undertone.optionull.app/"
 
   livecheck do
     url :url

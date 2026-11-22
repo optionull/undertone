@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Write the cask for a published release to mpdreamz/homebrew-tap: packaging/homebrew/undertone.rb with the version and
+# Write the cask for a published release to optionull/homebrew-tap: packaging/homebrew/undertone.rb with the version and
 # the sha256 the release carries. Run by the release workflow after publishing, and by the tap workflow to redo it.
 #
 #   TAP_TOKEN=… scripts/bump-tap.sh 0.1.0
@@ -8,7 +8,7 @@ root="$(cd "$(dirname "$0")/.." && pwd)"
 version="${1:?usage: scripts/bump-tap.sh <version>}"
 version="${version#v}"
 token="${TAP_TOKEN:?set TAP_TOKEN (the HOMEBREW_TAP_TOKEN secret)}"
-release="https://github.com/mpdreamz/undertone/releases/download/v$version"
+release="https://github.com/optionull/undertone/releases/download/v$version"
 
 # The published checksum, so the cask matches what users download.
 sha="$(curl -fsSL "$release/Undertone-arm64.zip.sha256" | awk '{print $1}')"
@@ -16,11 +16,11 @@ sha="$(curl -fsSL "$release/Undertone-arm64.zip.sha256" | awk '{print $1}')"
 
 tap="$(mktemp -d)"
 trap 'rm -rf "$tap"' EXIT
-git clone --quiet --depth 1 "https://x-access-token:$token@github.com/mpdreamz/homebrew-tap.git" "$tap"
+git clone --quiet --depth 1 "https://x-access-token:$token@github.com/optionull/homebrew-tap.git" "$tap"
 mkdir -p "$tap/Casks"
 # The template's header is about the template; the tap's copy says where it comes from instead.
 {
-  echo "# Written by undertone's release workflow from packaging/homebrew/undertone.rb in https://github.com/mpdreamz/undertone;"
+  echo "# Written by undertone's release workflow from packaging/homebrew/undertone.rb in https://github.com/optionull/undertone;"
   echo "# change it there, not here."
   sed -e '/^# TEMPLATE:/,/^[^#]/{/^#/d;}' -e "s/__VERSION__/$version/" -e "s/__SHA256__/$sha/" \
     "$root/packaging/homebrew/undertone.rb"
@@ -36,4 +36,4 @@ fi
 git -c user.name="undertone release" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
   commit --quiet -m "undertone $version"
 git push --quiet origin HEAD:main
-echo "bump-tap: mpdreamz/homebrew-tap now installs undertone $version ($sha)"
+echo "bump-tap: optionull/homebrew-tap now installs undertone $version ($sha)"
