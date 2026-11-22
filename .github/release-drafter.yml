@@ -41,5 +41,5 @@ autolabeler:
 template: |
   $CHANGES
 
-  **Install:** `brew install --cask mpdreamz/tap/undertone`, or
-  `curl -fsSL https://raw.githubusercontent.com/mpdreamz/undertone/main/install.sh | sh`. Undertone updates itself.
+  **Install:** `brew install --cask optionull/tap/undertone`, or
+  `curl -fsSL https://raw.githubusercontent.com/optionull/undertone/main/install.sh | sh`. Undertone updates itself.

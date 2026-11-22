@@ -10,17 +10,17 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/mpdreamz/undertone/releases/latest"><img src="https://img.shields.io/github/v/release/mpdreamz/undertone?label=release&color=ffb03d" alt="Latest release"></a>
-  <a href="https://github.com/mpdreamz/undertone/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/mpdreamz/undertone/ci.yml?branch=main&label=ci" alt="CI"></a>
+  <a href="https://github.com/optionull/undertone/releases/latest"><img src="https://img.shields.io/github/v/release/optionull/undertone?label=release&color=ffb03d" alt="Latest release"></a>
+  <a href="https://github.com/optionull/undertone/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/optionull/undertone/ci.yml?branch=main&label=ci" alt="CI"></a>
   <img src="https://img.shields.io/badge/macOS-15%2B-a96bff" alt="macOS 15 or later">
   <img src="https://img.shields.io/badge/Apple%20Silicon-arm64-a96bff" alt="Apple Silicon">
-  <a href="LICENSE"><img src="https://img.shields.io/github/license/mpdreamz/undertone?color=2ee6a6" alt="MIT licence"></a>
+  <a href="LICENSE"><img src="https://img.shields.io/github/license/optionull/undertone?color=2ee6a6" alt="MIT licence"></a>
 </p>
 
 <p align="center">
   <a href="https://undertone.optionull.app/"><b>Website</b></a> ·
   <a href="https://undertone.optionull.app/getting-started/"><b>Docs</b></a> ·
-  <a href="https://github.com/mpdreamz/undertone/releases/latest/download/Undertone-arm64.zip"><b>Download</b></a>
+  <a href="https://github.com/optionull/undertone/releases/latest/download/Undertone-arm64.zip"><b>Download</b></a>
 </p>
 
 <p align="center">
@@ -30,11 +30,11 @@
 ## Install
 
 ```sh
-brew install --cask mpdreamz/tap/undertone
+brew install --cask optionull/tap/undertone
 ```
 
-or `curl -fsSL https://raw.githubusercontent.com/mpdreamz/undertone/main/install.sh | sh`, or
-[download the app](https://github.com/mpdreamz/undertone/releases/latest/download/Undertone-arm64.zip). It is signed
+or `curl -fsSL https://raw.githubusercontent.com/optionull/undertone/main/install.sh | sh`, or
+[download the app](https://github.com/optionull/undertone/releases/latest/download/Undertone-arm64.zip). It is signed
 and notarized, needs no permissions, opens at login, and updates itself. Apple Silicon, macOS 15 or later.
 
 ## Every picture is drawn on your Mac

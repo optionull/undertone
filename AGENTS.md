@@ -33,5 +33,5 @@ overlay and run `mise run shots`, never a screenshot of a real desktop. Docs cla
 
 Merges to main keep a draft release up to date. `gh workflow run release` builds main, signs it with the Developer ID,
 notarizes and staples it, writes a signed appcast for Sparkle, publishes the draft and bumps
-`mpdreamz/homebrew-tap`. Secrets are stored with `scripts/release-secrets.sh` (run by the owner, never by an agent);
+`optionull/homebrew-tap`. Secrets are stored with `scripts/release-secrets.sh` (run by the owner, never by an agent);
 the Sparkle private key lives in the owner's keychain under the account `undertone` and is never handled here.

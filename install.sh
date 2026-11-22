@@ -1,5 +1,5 @@
 #!/bin/sh
-# Install or update Undertone: curl -fsSL https://raw.githubusercontent.com/mpdreamz/undertone/main/install.sh | sh
+# Install or update Undertone: curl -fsSL https://raw.githubusercontent.com/optionull/undertone/main/install.sh | sh
 #
 # Downloads the latest release (or UNDERTONE_VERSION=0.1.0), checks its sha256, and puts Undertone.app in /Applications, or
 # ~/Applications when /Applications is not writable (UNDERTONE_APP_DIR overrides both; UNDERTONE_DOWNLOAD_BASE downloads from
@@ -7,7 +7,7 @@
 # carries no quarantine flag, so it opens without a Gatekeeper prompt.
 set -eu
 
-repo="mpdreamz/undertone"
+repo="optionull/undertone"
 asset="Undertone-arm64.zip"
 
 fail() {
