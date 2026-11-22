@@ -170,6 +170,7 @@
   .foot { border-top: 1px solid var(--line); padding: 28px 0 40px; color: var(--dim); font-size: 14px; }
   .foot .wrap { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
   .foot a { color: var(--muted); text-decoration: none; }
+  .org{display:inline-flex;align-items:center;margin-left:2px}.org img{width:26px;height:26px;border-radius:7px;display:block;opacity:.9;transition:opacity .15s,transform .15s}.org:hover img,.org:focus-visible img{opacity:1;transform:scale(1.06)}.orgf{display:inline-flex;align-items:center;gap:8px}.orgf img{width:18px;height:18px;border-radius:5px}
   .foot .r { margin-left: auto; display: flex; gap: 18px; }
 
   @media (max-width: 860px) {
@@ -196,6 +197,7 @@
       <a class="l" href="#faq">FAQ</a>
       <a class="l" href="getting-started/">Docs</a>
       <a class="btn" href="https://github.com/optionull/undertone">GitHub</a>
+      <a class="org" href="https://optionull.app/" title="More Mac apps from optionull" aria-label="optionull: more Mac apps"><img src="images/optionull.svg" alt="" width="26" height="26"></a>
     </div>
   </div>
 </nav>
@@ -454,7 +456,7 @@
 
 <footer class="foot">
   <div class="wrap">
-    <span>Undertone · MIT</span>
+    <span>Undertone · MIT · <a class="orgf" href="https://optionull.app/"><img src="images/optionull.svg" alt="" width="18" height="18">An optionull app</a></span>
     <div class="r">
       <a href="getting-started/">Docs</a>
       <a href="https://github.com/optionull/undertone/releases">Releases</a>
